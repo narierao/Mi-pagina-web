@@ -8,6 +8,10 @@
   left:0px;
   background-color: white;
   align-items: center;
+  border: 0px;
+  border-bottom: 0.5px;
+  border-style: solid;
+  border-bottom-color: #E80C64;
 }
 
 .nav-bar {

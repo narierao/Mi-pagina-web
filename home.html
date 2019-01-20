@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/nav-bar.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <script src="js/Chart.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
   </head>
   <body>
     <div class="body-container">
@@ -22,6 +26,50 @@
           </div>
         </div>
       </center>
+      <div class="body-content">
+        <div class="presentation-content">
+          <div class="text-content" align= justify>
+            <p class="presentation-tittle" >Presentación</p>
+            <p>{Español}</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis nulla nec mauris vulputate, a porttitor metus pharetra. Donec sollicitudin ex a est ullamcorper, sed semper risus blandit. Proin suscipit mollis augue rhoncus aliquam. Aliquam a ultrices urna. Quisque dapibus nisi ac nisi volutpat pulvinar. Aliquam aliquam elementum cursus. Pellentesque vitae lacus ultricies, malesuada orci a, facilisis nisl. Sed eget pulvinar dui.
+                Integer sed nisl et lacus mattis venenatis. Pellentesque lacinia, massa lobortis varius interdum, lacus lorem bibendum nisl, non dictum felis libero eu ipsum. Nam orci erat, pretium sed volutpat non, rhoncus et ex. Maecenas in risus vitae nunc imperdiet tristique. Curabitur et vehicula ipsum. Etiam aliquet est in aliquam finibus. Ut cursus et erat sit amet varius. Nunc malesuada urna nec justo venenatis, eget maximus augue viverra. Maecenas a ornare tortor. Proin quis posuere justo. Quisque non ultrices diam. Suspendisse commodo, purus a ornare faucibus, velit nibh porta dui, eget scelerisque felis lacus eu diam. Praesent commodo luctus diam, sed feugiat sapien vulputate quis.</p>
+            <p class="English">{English}</p>
+            <p class="English">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis nulla nec mauris vulputate, a porttitor metus pharetra. Donec sollicitudin ex a est ullamcorper, sed semper risus blandit. Proin suscipit mollis augue rhoncus aliquam. Aliquam a ultrices urna. Quisque dapibus nisi ac nisi volutpat pulvinar. Aliquam aliquam elementum cursus. Pellentesque vitae lacus ultricies, malesuada orci a, facilisis nisl. Sed eget pulvinar dui.
+                    Integer sed nisl et lacus mattis venenatis. Pellentesque lacinia, massa lobortis varius interdum, lacus lorem bibendum nisl, non dictum felis libero eu ipsum. Nam orci erat, pretium sed volutpat non, rhoncus et ex. Maecenas in risus vitae nunc imperdiet tristique. Curabitur et vehicula ipsum. Etiam aliquet est in aliquam finibus. Ut cursus et erat sit amet varius. Nunc malesuada urna nec justo venenatis, eget maximus augue viverra. Maecenas a ornare tortor. Proin quis posuere justo. Quisque non ultrices diam. Suspendisse commodo, purus a ornare faucibus, velit nibh porta dui, eget scelerisque felis lacus eu diam. Praesent commodo luctus diam, sed feugiat sapien vulputate quis.</p>
+          </div>
+          <div class="picture-content">
+            <img class ="imagen-presentacion" src="images/panda.jpg" alt="Smiley face" height="500" width="550">
+          </div>
+        </div>
+      </div>
+      <div class="graph-content"  width="200px" height="300px">
+        <canvas id="myChart" width="400px" height="400px"></canvas>
+          <script>
+            var ctx = document.getElementById("myChart");
+            var myChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    //labels: ["Red", "Blue"],
+                    datasets: [{
+                        //label: '# of Votes',
+                        data: [7, 3],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                        ],
+                        borderColor: [
+                            'rgba(255,99,132,1)',
+                            'rgba(54, 162, 235, 1)',
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                  responsive: false
+                }
+            });
+        </script>
+      </div>
     </div>
   </body>
 </html>

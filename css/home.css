@@ -1,0 +1,47 @@
+
+.body-content {
+  width: 100%;
+  margin-top: 100px;;
+}
+
+.presentation-content {
+ width: 100%;
+ display: inline-flex;
+}
+
+.text-content {
+  width: 50%;
+  display: block;
+  margin-left: 40px;
+  margin-right: 20px;
+  text-decoration: none;
+  align: justify ;
+  font-size: 18px;
+  font-family: 'Source Sans Pro';
+}
+
+.picture-content {
+  width: 50%;
+  display: inline-flex;
+  margin-left: 70px;
+  margin-top: 120px;
+
+}
+
+.imagen-presentacion {
+  border-radius: 2000px;
+}
+
+.English {
+  color: gray;
+  font-style: italic;
+}
+
+.presentation-tittle {
+  font-size: 25px;
+}
+
+.graph-content{
+  width: 400px;
+  height: 400px;
+}
